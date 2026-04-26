@@ -3,6 +3,8 @@ import { gql } from "@apollo/client";
 import { HomeClient } from "@/components/custom/home-client";
 import { RestaurantList } from "@/components/custom/restaurant-list";
 
+export const dynamic = "force-dynamic";
+
 export const GET_COUNTRIES_AND_ROLES = gql`
   query GetCountriesAndRoles {
     distinctCountries

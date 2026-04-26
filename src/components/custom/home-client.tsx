@@ -80,8 +80,8 @@ export function HomeClient({ distinctCountries, distinctRoles }: { distinctCount
   if (selectedRestId) {
     return (
       <div className="w-full">
-        <RestaurantOrder 
-          restaurantId={selectedRestId} 
+        <RestaurantOrder
+          restaurantId={selectedRestId}
           onBack={() => setSelectedRestId(null)}
           customerId={user}
           country={country}

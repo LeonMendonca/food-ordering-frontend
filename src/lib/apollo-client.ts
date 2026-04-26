@@ -17,7 +17,7 @@ const setContextLink = setContext((_, { headers }) => {
 });
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:3001/graphql",
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_URL || "http://localhost:3001/graphql",
 });
 
 const client = new ApolloClient({
